@@ -11,7 +11,7 @@ public class MavenDatabase {
 		try{  
 			Class.forName("com.mysql.cj.jdbc.Driver");  
 			Connection con=DriverManager.getConnection(  
-			"jdbc:mysql://localhost:3306/amazon_hr","root","Gingerbread1@gingerbread");  
+			"jdbc:mysql://localhost:3306/amazon_hr","root","YourDatabasePassword");  
 			
 			Statement stmt=con.createStatement(); 
 			String query = " insert into employees (employee_id, first_name, last_name, job_title, salary, reports_to, office_id)"
